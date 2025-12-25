@@ -9,6 +9,9 @@ on:
     - cron: "55 17 * * *"
   workflow_dispatch: # permite ejecutarlo a mano
 
+permissions:
+  contents: write
+
 jobs:
   commit-job:
     runs-on: ubuntu-latest
